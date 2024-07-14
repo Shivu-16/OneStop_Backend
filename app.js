@@ -15,7 +15,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "https://one-stop-deluxe.vercel.app/",
     method: ["GET", "HEAD" ,"POST", "DELETE", "PUT","OPTIONS"],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
